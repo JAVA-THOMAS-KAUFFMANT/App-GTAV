@@ -44,7 +44,12 @@ public class Game1Activity extends AppCompatActivity {
                     attemptCount++;
 
                     TextView attemptString = findViewById(R.id.attemptString);
-                    attemptString.setText("Try : " + attemptCount + "/7");
+                    if (attemptCount >= 7) {
+                        attemptString.setText("Try : 7/7");
+                    } else {
+                        attemptString.setText("Try : " + attemptCount + "/7");
+                    }
+
 
                     // Comparer le nombre saisi avec le nombre aléatoire
                     if (guessedNumber == randomNumber) {
@@ -57,7 +62,7 @@ public class Game1Activity extends AppCompatActivity {
                         test.setText("⬆️");
                     }
 
-                    if (attemptCount >= 7) {
+                    if (attemptCount > 7) {
                         showGameOver(randomNumber);
                     }
                 } else {
@@ -97,8 +102,8 @@ public class Game1Activity extends AppCompatActivity {
     private void showGameOver(int guessedNumber) {
         Random random = new Random();
         int cashKey = random.nextInt(90) + 75;
-        int oilKey = random.nextInt(55) + 45;
-        int ferrariKey = random.nextInt(20) + 15;
+        int oilKey = random.nextInt(38) + 23;
+        int ferrariKey = random.nextInt(20) + 11;
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(Game1Activity.this);
         SharedPreferences.Editor editor = sharedPreferences.edit();

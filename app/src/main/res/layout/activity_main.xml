@@ -17,10 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:layout_marginBottom="16dp"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="SAN ANDREAS TOMAGOTCHI"
+            android:text="SAN ANDREAS"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="23sp"
@@ -161,79 +160,128 @@
             <ImageView
                 android:id="@+id/imageFrancklin"
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="400dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 app:srcCompat="@drawable/personnage" />
         </LinearLayout>
 
-        <LinearLayout
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp">
 
-            <TextView
-                android:id="@+id/buttonGame1"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:backgroundTint="#2EC11E"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Game 1" />
-
-            <TextView
-                android:id="@+id/buttonGame2"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:backgroundTint="#2EC11E"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Game 2" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp"
-            android:gravity="clip_horizontal|center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/buttonShop"
-                style="@style/Widget.AppCompat.Button"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:backgroundTint="#DD8686"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Shop" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/buttonInventory"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:backgroundTint="#CCC7A7"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Garage" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/buttonGame1"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#2EC11E"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Game 1" />
+
+                    <TextView
+                        android:id="@+id/buttonGame2"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#2EC11E"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Game 2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/buttonRace"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFBF00"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Race" />
+
+                    <TextView
+                        android:id="@+id/buttonSoon"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#0088FF"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Soon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="clip_horizontal|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/buttonShop"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#DD8686"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Shop" />
+
+                    <TextView
+                        android:id="@+id/buttonInventory"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#CCC7A7"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Garage" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

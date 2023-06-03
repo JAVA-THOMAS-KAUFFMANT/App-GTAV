@@ -23,7 +23,7 @@
             android:layout_marginTop="28dp"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="SAN ANDREAS TOMAGOTCHI"
+            android:text="SAN ANDREAS"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="23sp"
@@ -414,7 +414,7 @@
         </ScrollView>
 
         <TextView
-            android:id="@+id/GoHomeShop"
+            android:id="@+id/StartRaceButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"

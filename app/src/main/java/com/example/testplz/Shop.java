@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.preference.PreferenceManager;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +21,7 @@ public class Shop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shop);
 
-        TextView buttonGoHomeShop = findViewById(R.id.GoHomeShop);
+        TextView buttonGoHomeShop = findViewById(R.id.StartRaceButton);
         buttonGoHomeShop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,14 +30,14 @@ public class Shop extends AppCompatActivity {
             }
         });
 
-        setupPopupButton(R.id.motoGpButton, "Moto GP", "motogp", 35, 25, 10, 5, 0, 5);
-        setupPopupButton(R.id.rs6Button, "Audi rs6", "rs6", 155, 85, 25, 18, 5, 4);
-        setupPopupButton(R.id.urusButton, "Urus", "urus", 260, 125, 40, 28, 18, 11);
-        setupPopupButton(R.id.gtrButton, "Nissan GTR", "gtr", 590, 180, 65, 40, 38, 21);
-        setupPopupButton(R.id.gt500Button, "Shelby Gt500", "gt500", 870, 280, 80, 65, 58, 30);
-        setupPopupButton(R.id.aventadorButton, "Aventador", "aventador", 1290, 450, 120, 78, 78, 32);
-        setupPopupButton(R.id.buggatiButton, "Buggati Chiron", "buggati", 2295, 810, 160, 98, 98, 45);
-        setupPopupButton(R.id.supraButton, "Toyota Supra", "supra", 3275, 1250, 250, 120, 128, 78);
+        setupPopupButton(R.id.motoGpButton, "Moto GP", "motogp", 45, 35, 15, 10, 5, 10);
+        setupPopupButton(R.id.rs6Button, "Audi rs6", "rs6", 175, 125, 35, 24, 10, 8);
+        setupPopupButton(R.id.urusButton, "Urus", "urus", 280, 145, 60, 34, 24, 19);
+        setupPopupButton(R.id.gtrButton, "Nissan GTR", "gtr", 640, 200, 95, 55, 50, 29);
+        setupPopupButton(R.id.gt500Button, "Shelby Gt500", "gt500", 1170, 380, 160, 80, 78, 45);
+        setupPopupButton(R.id.aventadorButton, "Aventador", "aventador", 1790, 570, 200, 100, 98, 52);
+        setupPopupButton(R.id.buggatiButton, "Buggati Chiron", "buggati", 2695, 710, 260, 120, 170, 80);
+        setupPopupButton(R.id.supraButton, "Toyota Supra", "supra", 3975, 1250, 300, 180, 168, 88);
     }
 
     private void setupPopupButton(int buttonId, final String title, final String idVehicle, final int cashMin, final int cashMax, final int oilMin, final int oilMax, final int ferrariMin, final int ferrariMax) {

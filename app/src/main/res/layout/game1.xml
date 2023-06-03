@@ -24,7 +24,7 @@
             android:layout_marginTop="28dp"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="SAN ANDREAS TOMAGOTCHI"
+            android:text="SAN ANDREAS"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="23sp"
@@ -47,20 +47,6 @@
             android:typeface="monospace" />
 
         <TextView
-            android:id="@+id/attemptString"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:layout_marginBottom="4dp"
-            android:fontFamily="monospace"
-            android:gravity="center_horizontal"
-            android:text="Try : 0/7"
-            android:textColor="#FF006F"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
-
-        <TextView
             android:id="@+id/numberGuessString"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,6 +56,20 @@
             android:fontFamily="monospace"
             android:text="Number : **"
             android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/attemptString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="monospace"
+            android:gravity="center_horizontal"
+            android:text="Try : 0/7"
+            android:textColor="#FF006F"
             android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="monospace" />

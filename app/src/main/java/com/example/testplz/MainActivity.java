@@ -58,6 +58,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView button5 = findViewById(R.id.buttonRace);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Race.class);
+                startActivity(intent);
+            }
+        });
+
         displayMoney();
 
         ImageView imageFrancklin = findViewById(R.id.imageFrancklin);

@@ -49,7 +49,7 @@ public class Game2Activity extends AppCompatActivity {
                     if (!gameStarted) {
                         gameStarted = true;
                         nextSquare(msDefault);
-                        msDefault = 4000;
+                        msDefault = 1000;
                         return;
                     }
                     if (v == squares[currentSquareIndex]) {
@@ -168,9 +168,9 @@ public class Game2Activity extends AppCompatActivity {
 
         // Génération aléatoire des trois clés
         Random random = new Random();
-        int cashKey = random.nextInt(60) + 55;
-        int oilKey = random.nextInt(35) + 20;
-        int ferrariKey = random.nextInt(10) + 4;
+        int cashKey = random.nextInt(81) + 60;
+        int oilKey = random.nextInt(38) + 23;
+        int ferrariKey = random.nextInt(11) + 5;
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -182,8 +182,6 @@ public class Game2Activity extends AppCompatActivity {
 
         Toast.makeText(Game2Activity.this, "Congratulations! You won! Keys generated: cash=" + cashKey + ", oil=" + oilKey + ", ferrari=" + ferrariKey, Toast.LENGTH_LONG).show();
     }
-
-
 
     private int getRandomColor() {
         Random random = new Random();
